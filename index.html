@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#050508">
+<title>Rose</title>
+<link rel="preload" href="fonts/comfortaa.ttf" as="font" type="font/ttf" crossorigin>
+<style>
+@font-face{font-family:Comfortaa;src:url('fonts/comfortaa.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#050508}body{background:radial-gradient(ellipse at 50% 40%,#160915 0%,#09070d 40%,#050508 75%)}canvas{display:block;width:100%;height:100%;touch-action:manipulation}body:after{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0px,transparent 3px,#00000018 4px);opacity:.35}
+.message{position:fixed;left:50%;width:min(92vw,680px);margin:0;transform:translateX(-50%);text-align:center;color:#ffcee5;font:400 clamp(18px,3.2vw,30px)/1.55 Comfortaa,"Segoe UI",sans-serif;letter-spacing:.015em;text-shadow:0 0 28px #f264a647;pointer-events:none;opacity:0;text-wrap:balance}.message.revealed{animation:reveal 2.6s ease both}.message span{display:block}.message span+span{color:#ffe7f2;font-size:1.13em;margin-top:.12em}canvas:focus-visible{outline:1px solid #ef8ab766;outline-offset:-8px}@keyframes reveal{from{opacity:0;filter:blur(12px);translate:0 15px}to{opacity:1;filter:blur(0);translate:0 0}}@media(prefers-reduced-motion:reduce){.message.revealed{animation:none;opacity:1}}
+</style>
+</head>
+<body><canvas aria-label="Розовая роза. Нажми на бутон" role="button" tabindex="0"></canvas><p class="message" aria-live="polite" hidden><span>С тобой даже обычные дни</span><span>расцветают.</span></p><script src="rose.js"></script></body>
+</html>
+
